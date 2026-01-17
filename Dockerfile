@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 EXPOSE 8080
 ADD target/devops-integration.jar devops-integration.jar
 ENTRYPOINT ["java","-jar","/devops-integration.jar"]
